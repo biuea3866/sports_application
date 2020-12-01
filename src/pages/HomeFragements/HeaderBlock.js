@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import palette from '../../lib/styles/palette';
 import HomeIcon from '../../lib/styles/img/home-outline.svg';
-import Icon from '../../components/common/Icon';
+import BoardIcon from '../../lib/styles/img/clipboard-outline.svg';
+import MapIcon from '../../lib/styles/img/map-outline.svg';
+import PersonIcon from '../../lib/styles/img/person-outline.svg';
+import '../../components/common/Icon.css';
 
 const Header = styled.div`
     width: 100%;
@@ -75,10 +77,40 @@ const HeaderBlock = () => {
                         <li>
                             <Link to="/">
                                 <Header_nav_icon_area>
-                                    <Icon name={ HomeIcon } />
+                                    <img src={ HomeIcon } />
                                 </Header_nav_icon_area>
                                 <Header_nav_text_area>
                                     Home
+                                </Header_nav_text_area>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/post">
+                                <Header_nav_icon_area>
+                                    <img src={ BoardIcon } />
+                                </Header_nav_icon_area>
+                                <Header_nav_text_area>
+                                    Board
+                                </Header_nav_text_area>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/map">
+                                <Header_nav_icon_area>
+                                    <img src={ MapIcon } />
+                                </Header_nav_icon_area>
+                                <Header_nav_text_area>
+                                    Map
+                                </Header_nav_text_area>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/auth/myPage">
+                                <Header_nav_icon_area>
+                                    <img src={ PersonIcon } />
+                                </Header_nav_icon_area>
+                                <Header_nav_text_area>
+                                    My
                                 </Header_nav_text_area>
                             </Link>
                         </li>

@@ -3,7 +3,7 @@ import HeaderBlock from './HomeFragements/HeaderBlock';
 
 const HomePage = () => {
     return(
-        <HeaderBlock/>
+        <div></div>
     )
 };
 

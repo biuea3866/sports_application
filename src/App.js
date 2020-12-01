@@ -6,10 +6,12 @@ import postListPage from './pages/PostListPage';
 import MapPage from './MapPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import HeaderBlock from './pages/HomeFragements/HeaderBlock';
 
 const App = () => {
   return(
     <>
+      <HeaderBlock />
       <Route component={ HomePage } path="/" />
       <Route component={ postListPage } path="/post"/>
       <Route component={ MapPage } path="/map" />
