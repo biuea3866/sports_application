@@ -22,9 +22,7 @@ const Header_title = styled.div`
     font-weight: bold;
     font-size: 40px;
     text-align: center;
-    Link {
-        color: #000080;
-    }
+    color: #000080;
 `;
 
 const Header_nav = styled.div`
@@ -105,7 +103,7 @@ const HeaderBlock = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/auth/myPage">
+                            <Link to="/auth">
                                 <Header_nav_icon_area>
                                     <img src={ PersonIcon } />
                                 </Header_nav_icon_area>
